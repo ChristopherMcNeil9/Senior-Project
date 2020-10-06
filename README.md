@@ -8,4 +8,4 @@ The purpose of this project was to create a more time effcient process for the a
 
 The entry point into the program can be found in reader.m
 
-This portion of the program handles all read/write functions along with directory management.  Lines 1-3 are to be changed depending upon the location of the prexisting (line 1) and where you want the canny output (line 2) and analysis data (line 3).  The root directory (rootdir) is to contain 
+This portion of the program handles all read/write functions along with directory management.  Lines 1-3 are to be changed depending upon the location of the prexisting images (line 1) and where you want the canny output (line 2) and analysis data (line 3).  The root directory (rootdir) is to contain images 
