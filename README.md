@@ -1,4 +1,4 @@
-# Senior-Project
+# **Senior-Project**
 
 This project was created in association with The Geisler & Geisler-Lee Laboratory and the department of Plant Biology at SIU
 
@@ -17,4 +17,4 @@ The rest of this code is broken into 3 main sections, an autocropper, canny edge
 This section takes an image and reduces it size to encompass the root system.  It uses the pixel density of a green-scale image to find the points with the highest concentrations of green then uses a modified gaussian scalar to remove outliers near the edges while making the probable center point closer to the center of the image.
 
 ![x axis of image calculation]
-(http://192.168.50.79:13689/image1.png)
+(http://75.66.68.24:13689/image1.png)
