@@ -35,7 +35,7 @@ The second form of analysis is 3d pixel density which takes two 2d pixel densiti
 
 The final form of analysis is a Windrose which uses the 3d analysis to form a circular analysis.  This uses Windrose code avaliable through the MATLAB file exchange.
 
-# Other code
+# 2.3 Other code
 
 options.m creates a .mat file that contains a struct with all the arugments that will be passed to windrose to make it more human readable.
 
