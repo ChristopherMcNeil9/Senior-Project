@@ -8,7 +8,7 @@ The purpose of this project was to create a more time effcient process for the a
 
 The entry point into the program can be found in reader.m
 
-This portion of the program handles all read/write functions along with directory management.  Lines 1-3 are to be changed depending upon the location of the prexisting images (line 1) and where you want the canny output (line 2) and analysis data (line 3).  Folders are currently need to be created manually before running the code!  The root directory (rootdir) is to contain images in JPG form, this is case-sensitive but can be changed on line 5
+This portion of the program handles all read/write functions along with directory management.  Lines 1-3 are to be changed depending upon the location of the prexisting images (line 1) and where you want the canny output (line 2) and analysis data (line 3).  Folders currently need to be created manually before running the code!  The root directory (rootdir) is to contain images in JPG form, this is case-sensitive but can be changed on line 5
 
 The rest of this code is broken into 3 main sections, an autocropper, canny edge detection, and analysis.
 
@@ -16,7 +16,7 @@ The rest of this code is broken into 3 main sections, an autocropper, canny edge
 
 This section takes an image and reduces it size to encompass the root system.  It uses the pixel density of a green-scale image to find the points with the highest concentrations of green then uses a modified gaussian scalar to remove outliers near the edges while making the probable center point closer to the center of the image.
 
-The same methodology is used when determing the top of the cropped image as well, but with a different gassian scalar that is weighted towards the top of the image.  (For visualization please see attached powerpoint to this project)
+The same methodology is used when determing the top of the cropped image as well, but with a different gaussian scalar that is weighted towards the top of the image.  (For visualization please see attached powerpoint to this project)
 
 Currently this methodology uses static boxes 45% of the width and height of the original image. This can be changed on lines 9 and 10 of Autocropper.m respectively.
 This ensures a constant pixel width for all cropped images which is important so that the analysis does not try to compare alternate sized images.
