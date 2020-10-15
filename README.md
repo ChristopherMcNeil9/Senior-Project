@@ -10,7 +10,7 @@ The entry point into the program can be found in reader.m
 
 This portion of the program handles all read/write functions along with directory management.  Lines 1-3 are to be changed depending upon the location of the pre-existing images (line 1) and where you want the canny output (line 2) and analysis data (line 3).  Folders currently need to be created manually before running the code!  The root directory (rootdir) is to contain images in JPG form, this is case-sensitive but can be changed on line 5
 
-The rest of this code is broken into 3 main sections, an Autocropper, canny edge detection, and analysis.
+The rest of this code is broken into 3 main functions, an Autocropper, canny edge detection, and analysis.
 
 # 2.0 Autocropper
 
@@ -36,11 +36,17 @@ The second form of analysis is 3d pixel density which takes two 2d pixel densiti
 
 The final form of analysis is a Windrose which uses the 3d analysis to form a circular analysis.  This uses Windrose code available through the MATLAB file exchange.
 
-# 2.3 Other code
+# 2.3 Other code/files
 
 options.m creates a .mat file that contains a struct with all the arguments that will be passed to windrose to make it more human readable.
 
 reduce_pixel_density.m is used as an auxiliary function during analysis and is what reduces the pixel density to groups of 100 pixels.
+
+test_data is a folder containing 80 images that can be used to run code with.
+
+test_data_(Analysis/Canny) are empty output folders for the program to put the respective images.
+
+Root Access Poster is a PowerPoint that contains visual representations of what each step is doing.
 
 # 3.0 Known Issues
 
