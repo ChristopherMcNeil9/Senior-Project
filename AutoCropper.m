@@ -1,8 +1,9 @@
 function cropped_image = AutoCropper(image)
-    % Predefined parameters
-    f = @(span,width) 2.^(-((2/width*4)*(span-(width/2))).^2);
-    g = @(span,height) 2.^(-((1/height*4)*(span-(height/4))).^2);
+    % Predefined equations for scalar weights
+    f = @(span,width) 2.^(-((2/width*4)*(span-(width/2))).^3);
+    g = @(span,height) 2.^(-((1/height*4)*(span-(height/4))).^3);
     
+    % values determined based upon size of the image
     height = size(image,1);
     width = size(image,2);
     crop_width = height*.45;
